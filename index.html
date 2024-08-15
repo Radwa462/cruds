@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="./css/bootstrap.min.css">
+    <link rel="Stylesheet" href="./css/main.css">
+</head>
+<body class="" >
+
+
+    <input type="text" id="test" class="=form-control" placeholder="index ya shaba7" oninput="sendDate()">
+<button onclick="sendDate()">Send</button>
+      
+<div class="container py-5">
+
+   <h1><span class="text-success"> P</span>roduct <span class="text-success"> M</span>anagement <span class="text-success"> S</span>ystem</h1>
+
+
+
+  <button class="btn btn-warning d-none" id="add" onclick="show2()"> Add </button>
+   <button class="btn btn-success" id="update" onclick="show1()"> Update </button>
+
+
+
+    <div class="fore-group my-4">
+        <label for="productName">product Name</label>
+        <input type="text" id="productName" class="form-control" placeholder="Enter Product Name">
+    </div>
+    <div class="fore-group my-4">
+        <label for="productprice">product price</label>
+        <input type="number" id="productprice" class="form-control" placeholder="Enter Product price">
+    </div>
+    <div class="fore-group my-4">
+        <label for="productcatagory">product catagory</label>
+        <input type="text" id="productcatagory" class="form-control" placeholder="Enter Product catagory">
+    </div>
+    <div class="fore-group my-4">
+        <label for="productDesc">product Description</label>
+        <input type="text" id="productDesc" class="form-control" placeholder="Enter Product Description">
+    </div>
+
+    <button class="btn btn-outline-primary" onclick="addProduc()"> Add Product </button>
+<button class="btn btn-success d-none" id="SaveBtn" onclick="Saveupdate()">Save change</button>
+ 
+
+    <input type="text" class="form-control my-4" oninput="searchprodect(this.value)" placeholder="Search with product Name"> 
+
+    <table class="table text-white text-center my-5">
+        <thead>
+            <th>  index </th>
+            <th>  Prodectname </th>
+            <th>  Prodectprice </th>
+            <th>  Prodect categery </th>
+            <th>  Prodect desc </th>
+            <th>  updata </th>
+            <th>  delete </th>
+        </thead>
+        <tbody id="tbody">
+           
+
+        </tbody>
+    </table>
+   
+    
+</div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
